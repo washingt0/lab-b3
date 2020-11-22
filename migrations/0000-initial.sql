@@ -284,6 +284,7 @@ CREATE TABLE public.t_job (
     kind SMALLINT NOT NULL,
     payload JSONB NOT NULL,
     timeout SMALLINT NOT NULL DEFAULT 10,
+    user_id UUID,
     started_at TIMESTAMP,
     finished_at TIMESTAMP,
     error TEXT
